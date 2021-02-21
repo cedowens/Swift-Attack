@@ -16,6 +16,8 @@ Unit tests for blue teams to aid with building detections for some common macOS 
 
 - cd Swift-Attack.app/Contents/MacOS (you can run the macho from here or copy it elsewhere and run...up to you)
 
+- grant the Swift-Attack macho full disk access to ensure you can run all of the tests without TCC issues
+
 > ./Swift-Attack -h 
 
 ![Image](swift-attack.png)
