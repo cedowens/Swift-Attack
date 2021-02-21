@@ -18,6 +18,8 @@ Unit tests for blue teams to aid with building detections for some common macOS 
 
 - grant the Swift-Attack macho full disk access to ensure you can run all of the tests without TCC issues
 
+- run xattr -c Swift-Attack to remove any quarantine attributes 
+
 > ./Swift-Attack -h 
 
 ![Image](swift-attack.png)
