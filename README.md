@@ -14,9 +14,9 @@ Unit tests for blue teams to aid with building detections for some common macOS 
 
 - cd to the build directory above
 
-- cd Swift-Attack.app/Contents/MacOS
+- cd Swift-Attack.app/Contents/MacOS (you can run the macho from here or copy it elsewhere and run...up to you)
 
-> ./Swift-Attack -h
+> ./Swift-Attack -h 
 
 ![Image](swift-attack.png)
 
