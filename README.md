@@ -1,6 +1,8 @@
 # Swift-Attack
 Unit tests for blue teams to aid with building detections for some common macOS post exploitation methods. I have included some post exploitation examples using both command line history and on disk binaries (which should be easier for detection) as well as post exploitation examples using API calls only (which will be more difficult for detection). The post exploitation examples included here are not all encompassing. Instead these are just some common examples that I thought would be useful to conduct unit tests around. I plan to continue to add to this project over time with additional unit tests.
 
+All of these tests run locally and return results to stdout (i.e., Swift-Attack does not connect to a server).
+
 ## Steps:
 > git clone https://github.com/cedowens/Swift-Attack
 
