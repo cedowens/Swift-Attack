@@ -39,3 +39,37 @@ You can run Swift-Attack with a single option or multiple options
 - I also included a simple macro.txt file (unobfuscated) for testing parent-child relationships around office macro executions on macOS. I did not obfuscate it since the focus is on parent-child relationship visibility/detection. If you want to test with an obfuscated macro, I have a repo at github.com/cedowens/MacC2 that contains an obfuscated macro.
 
 - I also did not include any persistence items, since in my opinion it is best to just clone and test persistence using Leo Pitt's persistent JXA repo https://github.com/D00MFist/PersistentJXA. This repo is by far the most comprehensive and current repo that I know of for macOS persistence.
+
+## Unit Tests Included:
+
+- Prompt using osascript binary
+
+- Prompt via API calls
+
+- Clipboard dump using osascript binary 
+
+- Clipboard dump using API calls
+
+- Screenshot using screencapture binary
+
+- Screenshot using API calls
+
+- Shell commands
+
+- Dumping zsh history
+
+- Security tool enumeration
+
+- Grabbing system info using osascript binary
+
+- Grabbing system info via API calls
+
+- Dumping ssh, aws, gcp, and azure keys on disk
+
+- Dumping browser history (Chrome, Safari, Firefox)
+
+- Dumping Quarantine history
+
+- Office Macro: I included a simple office macro that connects to local host. Note: the macro will invoke curl to make a GET request using python to http://127.0.0.1/testing when executed by clicking the "Enable Macros" button. This will allow you to test detections for parent-child relationships around macro execution. Note: this simple test does not include any obfuscation, since the test is really more geared towards parent-child relationships. You can use another repo of mine at https://github.com/cedowens/MacC2 to test with obfuscated macros. To use, just simply paste the contents of "macro.txt" into an office Doc, save as a macro enabled document or as 97-2004 document format (ex: .doc, .xls, etc.), and click "Enable Macros" when opening the doc to execute.
+
+- Installer Package: I included TestInstaller.pkg file to test for detections around a basic installer package. This installer package includes a preinstall script which runs in bash and drops com.simple.agent.plist to /Library/LaunchDaemons/ and drops test.js (simple popup prompt) to /Library/Application Support/. The com.simple.agent.plist file simply runs osascript against /Library/Application Support/test.js It also includes a postinstall script which runs in bash and loads the com.simple.agent.plis using launchctl load. While holding the Control button click Open on TestInstaller.pkg to run it. TestInstaller.pkg will drop the aforementioned files as root.
