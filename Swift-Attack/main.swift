@@ -732,6 +732,10 @@ func OfficeMacro(){
     print("\(green)[+] You can use the included macro.txt file to test for detections of macro execution from MS Office docs. You can simply paste the included macro.txt contents inside of an MS Office Document, close office out, re-open, and click \"Enable Macros\" to detonate it. It will make an http connection using curl to http://127.0.0.1/testing\(colorend)")
 }
 
+func InstallerPkg(){
+    print("\(green)[+] You can use the included TestInstaller.pkg file to test for detections around a basic installer package. This installer package includes a preinstall script which runs in bash and drops com.simple.agent.plist to /Library/LaunchDaemons/ and drops test.js (simple popup prompt) to /Library/Application Support/. It also includes a postinstall script which runs in bash and loads the com.simple.agent.plis using launchctl load. While holding the Control button click Open on TestInstaller.pkg to run it. TestInstaller.pkg will drop the aforementioned files as root.\(colorend)")
+}
+
        let flManager = FileManager.default
 
        Banner()
@@ -755,6 +759,7 @@ func OfficeMacro(){
                print("\(cyan)-KeySearch --> \(colorend)Search for ssh, aws, gcp, and azure keys on disk")
                print("\(cyan)-BrowserHistory --> \(colorend)Grab User Quarantine, Safari, Chrome, and Firefox history")
                print("\(cyan)-OfficeMacro --> \(colorend)Use a simple office macro that connects to local host. Note: the macro will invoke curl to make a GET request using python to http://127.0.0.1/testing when executed by clicking the \"Enable Macros\" button. This will allow you to test detections for parent-child relationships around macro execution. Note: this simple test does not include any obfuscation, since the test is really more geared towards parent-child relationships. You can use another repo of mine at https://github.com/cedowens/MacC2 to test with obfuscated macros.")
+               print("\(cyan)-InstallerPkg --> \(colorend)Use the included sample installer package (\"TestInstaller.pkg\") to test detections around a simple package installer.")
                print("\(yellow)***To test persistence methods, I recommend checking out https://github.com/D00MFist/PersistentJXA, as this is the most comprehensive list of persistence methods I know of for macOS***")
                print("")
                print("\(yellow)Usage:\(colorend)")
@@ -808,6 +813,9 @@ func OfficeMacro(){
                }
                if argument == "-OfficeMacro"{
                    OfficeMacro()
+               }
+               if argument == "-InstallerPkg"{
+                    InstallerPkg()
                }
            }
        }
