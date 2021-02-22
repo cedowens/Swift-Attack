@@ -747,7 +747,7 @@ func OfficeMacro(){
                print("\(cyan)-Clipboard-2 --> \(colorend)Dump clipboard contents using API calls (on disk osascript binary not used")
                print("\(cyan)-Screenshot-1 --> \(colorend)Perform a screenshot using the on-disk screencapture binary")
                print("\(cyan)-Screenshot-2 --> \(colorend)Perform a screenshot using API calls")
-               print("\(cyan)-Shell [command to run] --> \(colorend)Run a shell command")
+               print("\(cyan)-ShellCmd [command to run] --> \(colorend)Run a shell command")
                print("\(cyan)-Userhist --> \(colorend)Read from the user's zsh history file")
                print("\(cyan)-AV-Enum --> \(colorend)Enumerate running apps for security tools")
                print("\(cyan)-SystemInfo-1 --> \(colorend)Grab system info using the on-disk osascript binary")
