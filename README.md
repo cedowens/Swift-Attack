@@ -28,7 +28,7 @@ All of these tests run locally and return results to stdout (i.e., Swift-Attack 
 
 > ./Swift-Attack -h 
 
-![Image](swift-attack.png)
+![Image](swiftattack.png)
 
 ## Usage:
 
