@@ -25,7 +25,7 @@ let black = "\u{001B}[0;30m"
        func Banner(){
            print("\(cyan)+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\(colorend)")
            print("")
-           print("Swift-Attck: Relevant unit tests to aid blue teamers in building macOS detections.")
+           print("Swift-Attack: Relevant unit tests to aid blue teamers in building macOS detections.")
            print("author: @cedowens")
            print("\(cyan)+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\(colorend)")
 
