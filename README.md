@@ -14,7 +14,7 @@ All of these tests run locally and return results to stdout (i.e., Swift-Attack 
 
 - The compiled app will be dropped to something like: ***Users/<username>/Library/Developer/Xcode/DerivedData/Swift-Attack-[random]/Build/Products/Debug/Swift-Attack.app***
 
-- cd to the build directory above
+- cd to the directory above
 
 - cd Swift-Attack.app/Contents/MacOS (you can run the macho from here or copy it elsewhere and run...up to you)
 
