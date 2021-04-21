@@ -40,6 +40,8 @@ You can run Swift-Attack with a single option or multiple options
 
 - I also did not include any persistence items, since in my opinion it is best to just clone and test persistence using Leo Pitt's persistent JXA repo https://github.com/D00MFist/PersistentJXA. This repo is by far the most comprehensive and current repo that I know of for macOS persistence.
 
+- I recently ported some of the PersistentJXA repos over to Swift: https://github.com/cedowens/Persistent-Swift
+
 ## Unit Tests Included:
 
 - Prompt using osascript binary
