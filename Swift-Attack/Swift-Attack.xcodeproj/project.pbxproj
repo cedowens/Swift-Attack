@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D750FC9F25E0512900246087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D750FC9E25E0512900246087 /* Assets.xcassets */; };
+		D750FCA225E0512900246087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D750FCA025E0512900246087 /* Main.storyboard */; };
+		D750FCAE25E0512A00246087 /* Swift_AttackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750FCAD25E0512A00246087 /* Swift_AttackTests.swift */; };
+		D750FCB925E0512A00246087 /* Swift_AttackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750FCB825E0512A00246087 /* Swift_AttackUITests.swift */; };
+		D750FCC825E1F8E700246087 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750FCC725E1F8E700246087 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D750FCAA25E0512A00246087 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D750FC8F25E0512500246087 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D750FC9625E0512500246087;
+			remoteInfo = "Swift-Attack";
+		};
+		D750FCB525E0512A00246087 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D750FC8F25E0512500246087 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D750FC9625E0512500246087;
+			remoteInfo = "Swift-Attack";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D750FC9725E0512500246087 /* Swift-Attack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-Attack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D750FC9E25E0512900246087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D750FCA125E0512900246087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D750FCA325E0512900246087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D750FCA425E0512900246087 /* Swift_Attack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Swift_Attack.entitlements; sourceTree = "<group>"; };
+		D750FCA925E0512A00246087 /* Swift-AttackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-AttackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D750FCAD25E0512A00246087 /* Swift_AttackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_AttackTests.swift; sourceTree = "<group>"; };
+		D750FCAF25E0512A00246087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D750FCB425E0512A00246087 /* Swift-AttackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-AttackUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D750FCB825E0512A00246087 /* Swift_AttackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_AttackUITests.swift; sourceTree = "<group>"; };
+		D750FCBA25E0512A00246087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D750FCC725E1F8E700246087 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D750FC9425E0512500246087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D750FCA625E0512A00246087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D750FCB125E0512A00246087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D750FC8E25E0512500246087 = {
+			isa = PBXGroup;
+			children = (
+				D750FC9925E0512500246087 /* Swift-Attack */,
+				D750FCAC25E0512A00246087 /* Swift-AttackTests */,
+				D750FCB725E0512A00246087 /* Swift-AttackUITests */,
+				D750FC9825E0512500246087 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D750FC9825E0512500246087 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D750FC9725E0512500246087 /* Swift-Attack.app */,
+				D750FCA925E0512A00246087 /* Swift-AttackTests.xctest */,
+				D750FCB425E0512A00246087 /* Swift-AttackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D750FC9925E0512500246087 /* Swift-Attack */ = {
+			isa = PBXGroup;
+			children = (
+				D750FC9E25E0512900246087 /* Assets.xcassets */,
+				D750FCA025E0512900246087 /* Main.storyboard */,
+				D750FCA325E0512900246087 /* Info.plist */,
+				D750FCA425E0512900246087 /* Swift_Attack.entitlements */,
+				D750FCC725E1F8E700246087 /* main.swift */,
+			);
+			path = "Swift-Attack";
+			sourceTree = "<group>";
+		};
+		D750FCAC25E0512A00246087 /* Swift-AttackTests */ = {
+			isa = PBXGroup;
+			children = (
+				D750FCAD25E0512A00246087 /* Swift_AttackTests.swift */,
+				D750FCAF25E0512A00246087 /* Info.plist */,
+			);
+			path = "Swift-AttackTests";
+			sourceTree = "<group>";
+		};
+		D750FCB725E0512A00246087 /* Swift-AttackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D750FCB825E0512A00246087 /* Swift_AttackUITests.swift */,
+				D750FCBA25E0512A00246087 /* Info.plist */,
+			);
+			path = "Swift-AttackUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D750FC9625E0512500246087 /* Swift-Attack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D750FCBD25E0512A00246087 /* Build configuration list for PBXNativeTarget "Swift-Attack" */;
+			buildPhases = (
+				D750FC9325E0512500246087 /* Sources */,
+				D750FC9425E0512500246087 /* Frameworks */,
+				D750FC9525E0512500246087 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift-Attack";
+			productName = "Swift-Attack";
+			productReference = D750FC9725E0512500246087 /* Swift-Attack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D750FCA825E0512A00246087 /* Swift-AttackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D750FCC025E0512A00246087 /* Build configuration list for PBXNativeTarget "Swift-AttackTests" */;
+			buildPhases = (
+				D750FCA525E0512A00246087 /* Sources */,
+				D750FCA625E0512A00246087 /* Frameworks */,
+				D750FCA725E0512A00246087 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D750FCAB25E0512A00246087 /* PBXTargetDependency */,
+			);
+			name = "Swift-AttackTests";
+			productName = "Swift-AttackTests";
+			productReference = D750FCA925E0512A00246087 /* Swift-AttackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D750FCB325E0512A00246087 /* Swift-AttackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D750FCC325E0512A00246087 /* Build configuration list for PBXNativeTarget "Swift-AttackUITests" */;
+			buildPhases = (
+				D750FCB025E0512A00246087 /* Sources */,
+				D750FCB125E0512A00246087 /* Frameworks */,
+				D750FCB225E0512A00246087 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D750FCB625E0512A00246087 /* PBXTargetDependency */,
+			);
+			name = "Swift-AttackUITests";
+			productName = "Swift-AttackUITests";
+			productReference = D750FCB425E0512A00246087 /* Swift-AttackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D750FC8F25E0512500246087 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Dev;
+				TargetAttributes = {
+					D750FC9625E0512500246087 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D750FCA825E0512A00246087 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = D750FC9625E0512500246087;
+					};
+					D750FCB325E0512A00246087 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = D750FC9625E0512500246087;
+					};
+				};
+			};
+			buildConfigurationList = D750FC9225E0512500246087 /* Build configuration list for PBXProject "Swift-Attack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D750FC8E25E0512500246087;
+			productRefGroup = D750FC9825E0512500246087 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D750FC9625E0512500246087 /* Swift-Attack */,
+				D750FCA825E0512A00246087 /* Swift-AttackTests */,
+				D750FCB325E0512A00246087 /* Swift-AttackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D750FC9525E0512500246087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D750FC9F25E0512900246087 /* Assets.xcassets in Resources */,
+				D750FCA225E0512900246087 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D750FCA725E0512A00246087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D750FCB225E0512A00246087 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D750FC9325E0512500246087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D750FCC825E1F8E700246087 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D750FCA525E0512A00246087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D750FCAE25E0512A00246087 /* Swift_AttackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D750FCB025E0512A00246087 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D750FCB925E0512A00246087 /* Swift_AttackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D750FCAB25E0512A00246087 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D750FC9625E0512500246087 /* Swift-Attack */;
+			targetProxy = D750FCAA25E0512A00246087 /* PBXContainerItemProxy */;
+		};
+		D750FCB625E0512A00246087 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D750FC9625E0512500246087 /* Swift-Attack */;
+			targetProxy = D750FCB525E0512A00246087 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D750FCA025E0512900246087 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D750FCA125E0512900246087 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D750FCBB25E0512A00246087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D750FCBC25E0512A00246087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D750FCBE25E0512A00246087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Swift-Attack/Swift_Attack.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HRYGRPW472;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Swift-Attack/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dev.Swift-Attack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D750FCBF25E0512A00246087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Swift-Attack/Swift_Attack.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HRYGRPW472;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Swift-Attack/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dev.Swift-Attack";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D750FCC125E0512A00246087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HRYGRPW472;
+				INFOPLIST_FILE = "Swift-AttackTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dev.Swift-AttackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-Attack.app/Contents/MacOS/Swift-Attack";
+			};
+			name = Debug;
+		};
+		D750FCC225E0512A00246087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HRYGRPW472;
+				INFOPLIST_FILE = "Swift-AttackTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dev.Swift-AttackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift-Attack.app/Contents/MacOS/Swift-Attack";
+			};
+			name = Release;
+		};
+		D750FCC425E0512A00246087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HRYGRPW472;
+				INFOPLIST_FILE = "Swift-AttackUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dev.Swift-AttackUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Swift-Attack";
+			};
+			name = Debug;
+		};
+		D750FCC525E0512A00246087 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HRYGRPW472;
+				INFOPLIST_FILE = "Swift-AttackUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Dev.Swift-AttackUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Swift-Attack";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D750FC9225E0512500246087 /* Build configuration list for PBXProject "Swift-Attack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D750FCBB25E0512A00246087 /* Debug */,
+				D750FCBC25E0512A00246087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D750FCBD25E0512A00246087 /* Build configuration list for PBXNativeTarget "Swift-Attack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D750FCBE25E0512A00246087 /* Debug */,
+				D750FCBF25E0512A00246087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D750FCC025E0512A00246087 /* Build configuration list for PBXNativeTarget "Swift-AttackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D750FCC125E0512A00246087 /* Debug */,
+				D750FCC225E0512A00246087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D750FCC325E0512A00246087 /* Build configuration list for PBXNativeTarget "Swift-AttackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D750FCC425E0512A00246087 /* Debug */,
+				D750FCC525E0512A00246087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D750FC8F25E0512500246087 /* Project object */;
+}
