@@ -4,14 +4,18 @@ Unit tests for blue teams to aid with building detections for some common macOS 
 All of these tests run locally and return results to stdout (i.e., Swift-Attack does not connect to a server). 
 
 ## Steps:
-> git clone https://github.com/cedowens/Swift-Attack && cd Swift-Attack
+1. > git clone https://github.com/cedowens/Swift-Attack && cd Swift-Attack
 
-- Ensure you have installed swift and developer tools (can install from the mac app store)
+2. Ensure you have installed swift and developer tools (can install from the mac app store)
 
-> swiftc -o Swift-Attack swift-attack.swift
+3. Build calc.c for the dylib injection test:
 
-> ./Swift-Attack -h
-> 
+> gcc -dynamiclib -o calc.dylib calc.c
+
+4. > swiftc -o Swift-Attack swift-attack.swift
+
+5. > ./Swift-Attack -h
+
 ![Image](swiftattack.png)
 
 **Note: Other TTP dependencies are below:**
