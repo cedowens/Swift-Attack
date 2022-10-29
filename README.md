@@ -1,34 +1,23 @@
 # Swift-Attack
-Unit tests for blue teams to aid with building detections for some common macOS post exploitation methods. I have included some post exploitation examples using both command line history and on disk binaries (which should be easier for detection) as well as post exploitation examples using API calls only (which will be more difficult for detection). The post exploitation examples included here are not all encompassing. Instead these are just some common examples that I thought would be useful to conduct unit tests around. I plan to continue to add to this project over time with additional unit tests.
+Unit tests for blue teams to aid with building detections for some common macOS post exploitation methods. I have included some post exploitation examples using both command line history and API calls. The post exploitation examples included here are not all encompassing. Instead these are just some common examples that I thought would be useful to conduct unit tests around. I plan to continue to add to this project over time with additional unit tests.
 
 All of these tests run locally and return results to stdout (i.e., Swift-Attack does not connect to a server). 
 
 ## Steps:
-> git clone https://github.com/cedowens/Swift-Attack
+> git clone https://github.com/cedowens/Swift-Attack && cd Swift-Attack
 
 - Ensure you have installed swift and developer tools (can install from the mac app store)
 
-- open the xcodeproj file in XCode
+> swiftc -o Swift-Attack swift-attack.swift
 
-- Build in XCode
-
-- The compiled app will be dropped to something like: ***Users/<username>/Library/Developer/Xcode/DerivedData/Swift-Attack-[random]/Build/Products/Debug/Swift-Attack.app***
-
-- cd to the directory above
-
-- cd Swift-Attack.app/Contents/MacOS (you can run the macho from here or copy it elsewhere and run...up to you)
-
-- grant the Swift-Attack macho full disk access to ensure you can run all of the tests without TCC issues
-
-- run the following to remove any quarantine attributes:
-
-> xattr -c Swift-Attack 
-
-- Run Swift-Attack:
-
-> ./Swift-Attack -h 
-
+> ./Swift-Attack -h
 ![Image](swiftattack.png)
+
+**Note: Other TTP dependencies are below:**
+
+1. install golang (for the dump cookies test)
+2. install Firefox (for the inject dylib test)
+
 
 ## Usage:
 
@@ -38,9 +27,8 @@ You can run Swift-Attack with a single option or multiple options
 
 - I also included a simple macro.txt file (unobfuscated) for testing parent-child relationships around office macro executions on macOS. I did not obfuscate it since the focus is on parent-child relationship visibility/detection. If you want to test with an obfuscated macro, I have a repo at github.com/cedowens/MacC2 that contains an obfuscated macro.
 
-- I also did not include any persistence items, since in my opinion it is best to just clone and test persistence using Leo Pitt's persistent JXA repo https://github.com/D00MFist/PersistentJXA. This repo is by far the most comprehensive and current repo that I know of for macOS persistence.
+- I only included two persistence tests (Launch Agent, and Login Item). Check out Leo Pitt's persistent JXA repo https://github.com/D00MFist/PersistentJXA for a more comprehensive list of persistence examples. 
 
-- I recently ported some of the PersistentJXA repos over to Swift: https://github.com/cedowens/Persistent-Swift
 
 ## Unit Tests Included:
 
@@ -55,8 +43,6 @@ You can run Swift-Attack with a single option or multiple options
 - Screenshot using screencapture binary
 
 - Screenshot using API calls
-
-- Shell commands
 
 - Dumping zsh history
 
@@ -77,3 +63,13 @@ You can run Swift-Attack with a single option or multiple options
 - Installer Package: I included TestInstaller.pkg file to test for detections around a basic installer package. This installer package includes a preinstall script which runs in bash and drops com.simple.agent.plist to /Library/LaunchDaemons/ and drops test.js (simple popup prompt) to /Library/Application Support/. The com.simple.agent.plist file simply runs osascript against /Library/Application Support/test.js. It also includes a postinstall script which runs in bash and loads the com.simple.agent.plis using launchctl load. While holding the Control button click Open on TestInstaller.pkg to run it. TestInstaller.pkg will drop the aforementioned files as root.
 
 - CVE-2021-30657 Bypass Payloads: Two sample payloads (both make curl requests to localhost when detonated) to test two different types of payloads that abuse cve-2021-30657. More info here: https://cedowens.medium.com/macos-gatekeeper-bypass-2021-edition-5256a2955508
+
+- Launch Agent Persistence
+
+- Login Item Persistence 
+
+- Accessing/Copying the User Keychain db
+
+- Dylib Injection
+
+- Dumping Chrome Cookies
