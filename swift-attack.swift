@@ -315,18 +315,7 @@ func getDocumentsDirectory() -> URL {
 
 func InjectDylib(){
     print(" ===> Attempting to inject a dylib into /Applications/Firefox.app. Result:")
-
-    var size = 0
-    var mach = "hw.machine".cString(using: .utf8)
-    sysctlbyname(mach, nil, &size, nil, 0)
-    var machine = [CChar](repeating: 0, count: Int(size))
-    sysctlbyname(mach, &machine, &size, nil, 0)
-    var arch = String(cString: machine)
-
-    var dylibname = "calc-intel"
-    if arch == "arm64"{
-        dylibname = "calc"
-    }
+    var dylibname = "calc"
 
     let binpath = URL(fileURLWithPath: "/Applications/Firefox.app")
     let maliciousDylibPath = Bundle.main.path(forResource: dylibname, ofType: "dylib")
